@@ -12,13 +12,15 @@ GitHub Pages: `https://yefei404.github.io/your-world/`
 - **三个维度**：主世界、下界、末地
 - **建造与探索**：挖掘、放置、背包、成就和模组商店
 - **键鼠 / 触屏**：左侧拖动移动，右侧拖动转视角
-- **iPad 桌面图标**：Safari「添加到主屏幕」时标题为「你的世界」
+- **iPad 桌面图标**：Safari「添加到主屏幕」显示角色图标，标题为「你的世界」
 
 ## 项目结构
 
 ```
 your-world/
 ├── index.html      # 单文件应用（HTML + CSS + JS + Three.js）
+├── logo.png        # 标题画面角色
+├── icon.png        # iPad 主屏幕图标
 └── README.md
 ```
 

@@ -3,6 +3,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="你的世界">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" href="icon.png">
 <title>你的世界</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +38,7 @@ input[type=range]{width:100%;accent-color:var(--amber)}
 /* 标题 */
 #title{flex-direction:column;background:radial-gradient(ellipse at 50% 35%,rgba(0,0,0,0) 0,rgba(6,8,12,.55) 70%)}
 .logo{position:relative;font-family:var(--disp);font-size:clamp(52px,12vw,108px);line-height:1;color:#f4efe2;letter-spacing:.08em;text-shadow:0 4px 0 #6b6456,0 8px 0 #3d3931,0 12px 0 #1c1a17,0 16px 18px rgba(0,0,0,.6);margin:0}
+.mark{display:block;height:clamp(132px,28vh,220px);width:auto;margin:0 auto 6px;filter:drop-shadow(0 12px 10px rgba(0,0,0,.45))}
 .sub{font-family:var(--px);font-size:14px;letter-spacing:.5em;color:#d9d2c0;margin:14px 0 26px;text-shadow:2px 2px 0 #000;padding-left:.5em}
 #splash{position:absolute;right:-18%;bottom:6%;transform:rotate(-16deg);font-family:var(--body);font-weight:700;font-size:clamp(13px,2.4vw,19px);color:#ffec3d;text-shadow:2px 2px 0 #3f3a00;white-space:nowrap;animation:pulse .55s ease-in-out infinite alternate;pointer-events:auto;cursor:default}
 @keyframes pulse{to{transform:rotate(-16deg) scale(1.08)}}
@@ -160,7 +163,7 @@ input[type=range]{width:100%;accent-color:var(--amber)}
 <div id="chatin" hidden><input type="text" id="chatinput" maxlength="200" placeholder="输入消息，或以 / 开头输入命令（/help）" autocomplete="off"></div>
 <div id="screen" class="scr scrim" hidden></div>
 <div id="title" class="scr">
-  <div style="position:relative;text-align:center"><h1 class="logo" id="logo">你的世界</h1><div id="splash"></div></div>
+  <div style="position:relative;text-align:center"><img class="mark" src="logo.png" alt=""><h1 class="logo" id="logo">你的世界</h1><div id="splash"></div></div>
   <div class="sub">YOUR&nbsp;WORLD</div>
   <div class="menu">
     <button class="btn amber" id="bContinue" hidden>继续游戏</button>
